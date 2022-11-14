@@ -1,0 +1,67 @@
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
+
+@import 'components/button';
+
+@import 'utilities/text';
+
+
+.logo {
+  display: block;
+  height: 20px;
+  background-image: url('../image/LOGO.png');
+  background-size: contain;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  // width: 288px;
+  @include logoReplaceText;
+}
+.text-secondary {
+  color: $secondary;
+}
+.bg-dark10 {
+  background: $dark-10;
+}
+.bg-primary {
+  background: $primary;
+}
+.banner {
+  height: 80vh;
+  background-image: url('../image/banner-lg.png');
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.mt-lg {
+  margin-top: map-get($map: $spaces, $key: "lg");
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(30px);
+}
+
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.position-sticky {
+  position: sticky;
+}
+.top-0 {
+  top: 0;
+}
+.p-0 {
+  padding: 0;
+}
+
+.mt-auto {
+  margin-top: auto;
+}

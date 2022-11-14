@@ -1,0 +1,8 @@
+button, .btn {
+  padding: $btn-padding-y $btn-padding-x;
+  background: inherit;
+  color: $btn-color-base;
+  border: $btn-border-width solid $btn-color-base;
+  border-radius: $btn-border-radius;
+  cursor: pointer;
+}
